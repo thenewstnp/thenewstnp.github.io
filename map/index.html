@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>H5地理位置</title>
+</head>
+
+<body>
+
+
+
+	<script>
+		var options = {
+			enableHighAccuracy: true,
+			timeout: 5000,
+			maximumAge: 0
+		};
+		if (window.navigator.geolocation) {
+			window.navigator.geolocation.getCurrentPosition(handleSuccess, handleError, options);
+		} else {
+			console.log("不支持geolocation");
+		}
+
+		function handleSuccess(pesition) {
+			// 经度
+			var lng = pesition.coords.longitude;
+			// 纬度
+			var lat = pesition.coords.latitude;
+			console.log("经度为：" + lng);
+
+			console.log("纬度为：" + lat);
+		}
+
+		function handleError(error) {
+			console.warn('ERROR(' + error.code + '): ' + error.message);
+		}
+	</script>
+</body>
+
+</html>
