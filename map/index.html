@@ -16,7 +16,7 @@
 		var options = {
 			enableHighAccuracy: true,
 			timeout: 5000,
-			maximumAge: 0
+			maximumAge: 5000
 		};
 		if (window.navigator.geolocation) {
 			window.navigator.geolocation.getCurrentPosition(handleSuccess, handleError, options);
