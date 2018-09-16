@@ -2,7 +2,7 @@
  * @Author: LiuZe 
  * @Date: 2018-09-16 08:05:45 
  * @Last Modified by: LiuZe
- * @Last Modified time: 2018-09-16 10:44:59
+ * @Last Modified time: 2018-09-16 10:47:09
  */
 
 $(function () {
@@ -14,7 +14,7 @@ $(function () {
     })
 
     $(".logo .content").click(function () {
-        window.location.href = "/";
+        window.location.href = "/vsCode/index.html";
     })
 
     $(".p_content").on("click", "a", function () {
