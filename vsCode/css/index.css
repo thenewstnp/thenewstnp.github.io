@@ -89,6 +89,7 @@ table td {
     border-radius: 50%;
     background-image: url(../img/IMG_0020.JPG);
     background-size: 100px 100px;
+    cursor: pointer;
 }
 
 .logo .name{
